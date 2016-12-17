@@ -1,0 +1,40 @@
+c:\users\stagiaire\documents\visual studio 2012\Projects\getPixel\getPixel\bin\Debug\getPixel.exe.config
+c:\users\stagiaire\documents\visual studio 2012\Projects\getPixel\getPixel\bin\Debug\getPixel.exe
+c:\users\stagiaire\documents\visual studio 2012\Projects\getPixel\getPixel\bin\Debug\getPixel.pdb
+c:\users\stagiaire\documents\visual studio 2012\Projects\getPixel\getPixel\obj\Debug\getPixel.csprojResolveAssemblyReference.cache
+c:\users\stagiaire\documents\visual studio 2012\Projects\getPixel\getPixel\obj\Debug\getPixel.Form1.resources
+c:\users\stagiaire\documents\visual studio 2012\Projects\getPixel\getPixel\obj\Debug\getPixel.Properties.Resources.resources
+c:\users\stagiaire\documents\visual studio 2012\Projects\getPixel\getPixel\obj\Debug\getPixel.csproj.GenerateResource.Cache
+c:\users\stagiaire\documents\visual studio 2012\Projects\getPixel\getPixel\obj\Debug\getPixel.exe
+c:\users\stagiaire\documents\visual studio 2012\Projects\getPixel\getPixel\obj\Debug\getPixel.pdb
+D:\Users\InstaGib111\Documents\Chris\C#\getPixel\getPixel\bin\Debug\getPixel.exe.config
+D:\Users\InstaGib111\Documents\Chris\C#\getPixel\getPixel\obj\Debug\getPixel.exe
+D:\Users\InstaGib111\Documents\Chris\C#\getPixel\getPixel\obj\Debug\getPixel.pdb
+D:\Users\InstaGib111\Documents\Chris\C#\getPixel\getPixel\bin\Debug\getPixel.exe
+D:\Users\InstaGib111\Documents\Chris\C#\getPixel\getPixel\bin\Debug\getPixel.pdb
+D:\Users\InstaGib111\Documents\Chris\C#\getPixel\getPixel\obj\Debug\getPixel.csprojResolveAssemblyReference.cache
+D:\Users\InstaGib111\Documents\Chris\C#\getPixel\getPixel\obj\Debug\getPixel.Form1.resources
+D:\Users\InstaGib111\Documents\Chris\C#\getPixel\getPixel\obj\Debug\getPixel.Properties.Resources.resources
+D:\Users\InstaGib111\Documents\Chris\C#\getPixel\getPixel\obj\Debug\getPixel.csproj.GenerateResource.Cache
+F:\getPixel\getPixel\bin\Debug\getPixel.exe.config
+F:\getPixel\getPixel\obj\Debug\getPixel.exe
+F:\getPixel\getPixel\obj\Debug\getPixel.pdb
+F:\getPixel\getPixel\bin\Debug\getPixel.exe
+F:\getPixel\getPixel\bin\Debug\getPixel.pdb
+F:\getPixel\getPixel\obj\Debug\getPixel.csprojResolveAssemblyReference.cache
+F:\getPixel\getPixel\obj\Debug\getPixel.Form1.resources
+F:\getPixel\getPixel\obj\Debug\getPixel.Properties.Resources.resources
+F:\getPixel\getPixel\obj\Debug\getPixel.csproj.GenerateResource.Cache
+D:\Temp\getPixel\getPixel\bin\Debug\getPixel.exe.config
+D:\Temp\getPixel\getPixel\obj\Debug\getPixel.exe
+D:\Temp\getPixel\getPixel\obj\Debug\getPixel.pdb
+D:\Temp\getPixel\getPixel\bin\Debug\getPixel.exe
+D:\Temp\getPixel\getPixel\bin\Debug\getPixel.pdb
+D:\Temp\getPixel\getPixel\obj\Debug\getPixel.csprojResolveAssemblyReference.cache
+D:\Temp\getPixel\getPixel\obj\Debug\getPixel.Form1.resources
+D:\Temp\getPixel\getPixel\obj\Debug\getPixel.Properties.Resources.resources
+D:\Temp\getPixel\getPixel\obj\Debug\getPixel.csproj.GenerateResource.Cache
+D:\Users\InstaGib111\Documents\Chris\GIT\getPixel\getPixel\bin\Debug\getPixel.exe.config
+D:\Users\InstaGib111\Documents\Chris\GIT\getPixel\getPixel\obj\Debug\getPixel.exe
+D:\Users\InstaGib111\Documents\Chris\GIT\getPixel\getPixel\obj\Debug\getPixel.pdb
+D:\Users\InstaGib111\Documents\Chris\GIT\getPixel\getPixel\obj\Debug\getPixel.csprojResolveAssemblyReference.cache
