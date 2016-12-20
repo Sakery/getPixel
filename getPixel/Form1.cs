@@ -1,4 +1,5 @@
-﻿using System;
+﻿using getPixel.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -41,14 +42,17 @@ namespace getPixel
         Point centerPoint = new Point(halfWidth, halfHeight);
         Point centerPointLeft = new Point(halfWidth-1, halfHeight);
         Point centerPointRight = new Point(halfWidth+1, halfHeight);
+        Point centerPointTop = new Point(halfWidth, halfHeight-1);
+        Point centerPointBottom = new Point(halfWidth, halfHeight+1);
         Point defaultCoordinates = new Point(0, 0);
-        Size defaultSize = new Size(1, 1);
-        Size SizeWindowDefault = new Size(397, 100);
-        Size SizeWindowOptions = new Size(664, 100);
-        static bool active = false;
-        static bool option = false;
+        Size sizePixel = new Size(1, 1);
+        Size sizeWindowDefault = new Size(440, 100);
+        Size sizeWindowOptions = new Size(720, 220);
+        bool active = false;
+        bool option = false;
         int countFps = 0;
         int nbTry = 0;
+        int nbTryMax = 3;
         Color pixel;
 
         // occurs pixel color
@@ -56,7 +60,7 @@ namespace getPixel
         {
             using (Graphics graphics = Graphics.FromImage(bitmap))
             {
-                graphics.CopyFromScreen(from, defaultCoordinates, defaultSize);
+                graphics.CopyFromScreen(from, defaultCoordinates, sizePixel);
             }
             return bitmap.GetPixel(0, 0);
         }
@@ -84,11 +88,13 @@ namespace getPixel
             {
                 this.Text = "Cheat: ON";
                 btn_activer.Text = "Disable";
+                btn_activer.BackColor = Color.DarkSalmon;
             }
             else
             {
                 this.Text = "Cheat: OFF";
-                btn_activer.Text = "Enable";
+                btn_activer.Text = "Activate";
+                btn_activer.BackColor = Color.PaleGreen;
             }
         }
 
@@ -97,13 +103,15 @@ namespace getPixel
         {
             nbTry = 0;
             
-            while (nbTry < 3)
+            while (nbTry < nbTryMax)
             {
                 switch (nbTry)
                 {
                     case 1: pixel = GetCenterPixel(centerPointLeft); break;
                     case 2: pixel = GetCenterPixel(centerPointRight); break;
-                    default:
+                    case 3: pixel = GetCenterPixel(centerPointTop); break;
+                    case 4: pixel = GetCenterPixel(centerPointBottom); break;
+                    default: //case 0
                         pixel = GetCenterPixel(centerPoint);
                         lbl_couleur.Text = "R=" + pixel.R.ToString() + " G=" + pixel.G.ToString() + " B=" + pixel.B.ToString();
                         break;
@@ -140,7 +148,7 @@ namespace getPixel
         // Control Opacity
         private void trackBar1_ValueChanged(object sender, EventArgs e)
         {   
-            lbl_trackbar.Text = trackBar1.Value + "%";
+            //lbl_trackbar.Text = trackBar1.Value + "%";
             this.Opacity = (double)trackBar1.Value * 0.01;
             if (this.Opacity < 0.10)
             {
@@ -154,16 +162,16 @@ namespace getPixel
         {
             if (!option) 
             {
-                this.MinimumSize = SizeWindowOptions;
-                this.MaximumSize = SizeWindowOptions;
-                btn_setting.Text = "Option <<";
+                this.MinimumSize = sizeWindowOptions;
+                this.MaximumSize = sizeWindowOptions;
+                //btn_setting.Text = "Options <<";
                 option = true;
             }
             else
             {
-                this.MinimumSize = SizeWindowDefault;
-                this.MaximumSize = SizeWindowDefault;
-                btn_setting.Text = "Option >>";
+                this.MinimumSize = sizeWindowDefault;
+                this.MaximumSize = sizeWindowDefault;
+                //btn_setting.Text = "Options >>";
                 option = false;
             }
         }
@@ -171,8 +179,22 @@ namespace getPixel
         // Load Form1
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.MinimumSize = SizeWindowDefault;
-            this.MaximumSize = SizeWindowDefault;
+            this.MinimumSize = sizeWindowDefault;
+            this.MaximumSize = sizeWindowDefault;
+
+            //fill combobox
+            cbx_mode.DisplayMember = "Text";
+            cbx_mode.ValueMember = "Value";
+            var items = new[] {
+                new { Text = "1 Pixel", Value = "1p" },
+                new { Text = "3 Pixels", Value = "3p" },
+                new { Text = "5 Pixels", Value = "5p" }
+            };
+            cbx_mode.DataSource = items;
+            cbx_mode.SelectedValue = "3p";
+
+            //load resource image
+            img_preset.Image = (Bitmap)Resources.ResourceManager.GetObject("preset_blue"); ;
         }
 
         // Calc FPS
@@ -185,6 +207,16 @@ namespace getPixel
         {
             lb_count.Text = countFps.ToString();
             countFps = 0;
+        }
+
+        private void cbx_mode_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbx_mode.SelectedValue.ToString() == "5p")
+                nbTryMax = 5;
+            else if (cbx_mode.SelectedValue.ToString() == "3p")
+                nbTryMax = 3;
+            else
+                nbTryMax = 1;
         }
     }
 }
