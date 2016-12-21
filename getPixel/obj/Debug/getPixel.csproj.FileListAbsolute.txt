@@ -34,3 +34,7 @@ D:\Temp\getPixel\getPixel\obj\Debug\getPixel.csprojResolveAssemblyReference.cach
 D:\Temp\getPixel\getPixel\obj\Debug\getPixel.Form1.resources
 D:\Temp\getPixel\getPixel\obj\Debug\getPixel.Properties.Resources.resources
 D:\Temp\getPixel\getPixel\obj\Debug\getPixel.csproj.GenerateResource.Cache
+D:\Users\InstaGib111\Documents\Chris\GIT\getPixel\getPixel\bin\Debug\getPixel.exe.config
+D:\Users\InstaGib111\Documents\Chris\GIT\getPixel\getPixel\obj\Debug\getPixel.exe
+D:\Users\InstaGib111\Documents\Chris\GIT\getPixel\getPixel\obj\Debug\getPixel.pdb
+D:\Users\InstaGib111\Documents\Chris\GIT\getPixel\getPixel\obj\Debug\getPixel.csprojResolveAssemblyReference.cache

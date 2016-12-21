@@ -1,0 +1,9 @@
+D:\Users\InstaGib111\Documents\Chris\GIT\getPixel\getPixel\bin\Release\getPixel.exe.config
+D:\Users\InstaGib111\Documents\Chris\GIT\getPixel\getPixel\bin\Release\getPixel.exe
+D:\Users\InstaGib111\Documents\Chris\GIT\getPixel\getPixel\bin\Release\getPixel.pdb
+D:\Users\InstaGib111\Documents\Chris\GIT\getPixel\getPixel\obj\Release\getPixel.Form1.resources
+D:\Users\InstaGib111\Documents\Chris\GIT\getPixel\getPixel\obj\Release\getPixel.Properties.Resources.resources
+D:\Users\InstaGib111\Documents\Chris\GIT\getPixel\getPixel\obj\Release\getPixel.csproj.GenerateResource.Cache
+D:\Users\InstaGib111\Documents\Chris\GIT\getPixel\getPixel\obj\Release\getPixel.exe
+D:\Users\InstaGib111\Documents\Chris\GIT\getPixel\getPixel\obj\Release\getPixel.pdb
+D:\Users\InstaGib111\Documents\Chris\GIT\getPixel\getPixel\obj\Release\getPixel.csprojResolveAssemblyReference.cache

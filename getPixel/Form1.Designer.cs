@@ -56,6 +56,10 @@
             this.img_blue = new System.Windows.Forms.PictureBox();
             this.img_preset = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.timer_hook = new System.Windows.Forms.Timer(this.components);
+            this.lbl_key = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.cbx_shortcut = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nupdo_redmin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nupdo_bluemin)).BeginInit();
@@ -187,7 +191,7 @@
             // 
             this.nupdo_fps.Enabled = false;
             this.nupdo_fps.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nupdo_fps.Location = new System.Drawing.Point(471, 36);
+            this.nupdo_fps.Location = new System.Drawing.Point(653, 71);
             this.nupdo_fps.Maximum = new decimal(new int[] {
             300,
             0,
@@ -213,7 +217,7 @@
             // 
             this.lbl_fps.AutoSize = true;
             this.lbl_fps.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_fps.Location = new System.Drawing.Point(422, 38);
+            this.lbl_fps.Location = new System.Drawing.Point(610, 73);
             this.lbl_fps.Name = "lbl_fps";
             this.lbl_fps.Size = new System.Drawing.Size(37, 13);
             this.lbl_fps.TabIndex = 14;
@@ -326,7 +330,7 @@
             // 
             this.cbx_mode.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbx_mode.FormattingEnabled = true;
-            this.cbx_mode.Location = new System.Drawing.Point(471, 9);
+            this.cbx_mode.Location = new System.Drawing.Point(484, 8);
             this.cbx_mode.Name = "cbx_mode";
             this.cbx_mode.Size = new System.Drawing.Size(121, 21);
             this.cbx_mode.TabIndex = 30;
@@ -389,12 +393,37 @@
             this.label7.TabIndex = 32;
             this.label7.Text = "Mode :";
             // 
+            // timer_hook
+            // 
+            this.timer_hook.Enabled = true;
+            this.timer_hook.Interval = 20;
+            this.timer_hook.Tick += new System.EventHandler(this.timer_hook_Tick);
+            // 
+            // lbl_key
+            // 
+            this.lbl_key.AutoSize = true;
+            this.lbl_key.Location = new System.Drawing.Point(422, 43);
+            this.lbl_key.Name = "lbl_key";
+            this.lbl_key.Size = new System.Drawing.Size(53, 13);
+            this.lbl_key.TabIndex = 33;
+            this.lbl_key.Text = "Shortcut :";
+            // 
+            // cbx_shortcut
+            // 
+            this.cbx_shortcut.FormattingEnabled = true;
+            this.cbx_shortcut.Location = new System.Drawing.Point(484, 40);
+            this.cbx_shortcut.Name = "cbx_shortcut";
+            this.cbx_shortcut.Size = new System.Drawing.Size(121, 21);
+            this.cbx_shortcut.TabIndex = 34;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(704, 181);
+            this.Controls.Add(this.cbx_shortcut);
+            this.Controls.Add(this.lbl_key);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cbx_mode);
@@ -474,6 +503,10 @@
         private System.Windows.Forms.ComboBox cbx_mode;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        protected System.Windows.Forms.Timer timer_hook;
+        private System.Windows.Forms.Label lbl_key;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.ComboBox cbx_shortcut;
     }
 }
 
