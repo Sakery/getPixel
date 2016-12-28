@@ -328,6 +328,7 @@
             // 
             // cbx_mode
             // 
+            this.cbx_mode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbx_mode.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbx_mode.FormattingEnabled = true;
             this.cbx_mode.Location = new System.Drawing.Point(484, 8);
@@ -410,7 +411,10 @@
             // 
             // cbx_shortcut
             // 
+            this.cbx_shortcut.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_shortcut.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbx_shortcut.FormattingEnabled = true;
+            this.cbx_shortcut.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.cbx_shortcut.Location = new System.Drawing.Point(484, 40);
             this.cbx_shortcut.Name = "cbx_shortcut";
             this.cbx_shortcut.Size = new System.Drawing.Size(121, 21);
